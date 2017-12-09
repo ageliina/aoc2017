@@ -7,6 +7,7 @@
 from sys import argv
 from math import ceil
 import numpy as np
+import time
 
 largest_number = lambda x : 1 + 4*x*(x - 1)
 level_of = lambda x : ceil((1 + x**0.5) / 2)
@@ -41,8 +42,6 @@ def pad_with_zeros(A):
 
 
 def first_larger_than(k):
-
-    level_of_k = level_of(k)
 
     mat = np.ones((1, 1), dtype=np.int64)
     i = 0
@@ -90,7 +89,10 @@ def first_larger_than(k):
 
 # Main
 if __name__=="__main__":
+    start = time.time()
     print(distance(361527))
     print(first_larger_than(361527))
+    end = time.time()
+    print("%f s." % (end - start))
 
 
