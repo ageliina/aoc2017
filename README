@@ -1,0 +1,13 @@
+Advent of Code 2017
+-------------------
+
+25 programming/math problems once per day in December 2017. Porblems can be
+found at http://adventofcode.com/2017 .
+
+A dummy template is provided in dir 00/
+
+    00/
+    ├── input.txt
+    └── program.py
+
+-akke
